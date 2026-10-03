@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+venv/
+.venv/
+*.db
+
+# Environment
+.env
+keys/*.key
+keys/*.pem
+keys/*.json
+!keys/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Node
+node_modules/
+frontend/dist/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+test.db
+
+# Misc
+*.log
