@@ -38,7 +38,7 @@ export default function RoiCalculator() {
   return (
     <div className="min-h-screen bg-white dark:bg-surface-dark">
       <ToolsNav />
-      <JsonLdTool name="Analytics ROI Calculator" description="Calculate the return on investment from your analytics tools and data-driven decisions." url="https://analytics-app.doaide.com/tools/roi-calculator" />
+      <JsonLdTool name="Analytics ROI Calculator" description="Calculate the return on investment from your analytics tools and data-driven decisions." url="https://insights.doaide.com/tools/roi-calculator" />
       <main className="max-w-2xl mx-auto px-4 py-8 flex flex-col gap-8">
         <div>
           <h1 className="text-3xl font-extrabold text-gray-900 dark:text-white">Analytics ROI Calculator</h1>

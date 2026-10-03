@@ -1,7 +1,7 @@
 export function origin() {
   return typeof window !== 'undefined' && window.location.hostname !== 'localhost'
     ? window.location.origin
-    : 'https://analytics-app.doaide.com'
+    : 'https://insights.doaide.com'
 }
 
 export function fullUrl(path) {

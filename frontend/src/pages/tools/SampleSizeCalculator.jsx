@@ -42,7 +42,7 @@ export default function SampleSizeCalculator() {
   return (
     <div className="min-h-screen bg-white dark:bg-surface-dark">
       <ToolsNav />
-      <JsonLdTool name="A/B Test Sample Size Calculator" description="Calculate the minimum sample size needed for statistically significant A/B test results." url="https://analytics-app.doaide.com/tools/sample-size-calculator" />
+      <JsonLdTool name="A/B Test Sample Size Calculator" description="Calculate the minimum sample size needed for statistically significant A/B test results." url="https://insights.doaide.com/tools/sample-size-calculator" />
       <main className="max-w-2xl mx-auto px-4 py-8 flex flex-col gap-8">
         <div>
           <h1 className="text-3xl font-extrabold text-gray-900 dark:text-white">A/B Test Sample Size Calculator</h1>

@@ -92,7 +92,7 @@ export default function ChurnPredictor() {
   return (
     <div className="min-h-screen bg-white dark:bg-surface-dark">
       <ToolsNav />
-      <JsonLdTool name="Churn Risk Predictor" description="Assess customer churn risk with a quick quiz. Get a health score and actionable recommendations." url="https://analytics-app.doaide.com/tools/churn-predictor" />
+      <JsonLdTool name="Churn Risk Predictor" description="Assess customer churn risk with a quick quiz. Get a health score and actionable recommendations." url="https://insights.doaide.com/tools/churn-predictor" />
       <main className="max-w-2xl mx-auto px-4 py-8 flex flex-col gap-8">
         <div>
           <h1 className="text-3xl font-extrabold text-gray-900 dark:text-white">Churn Risk Assessment</h1>

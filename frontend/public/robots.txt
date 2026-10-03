@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://analytics-app.doaide.com/sitemap.xml
+Sitemap: https://insights.doaide.com/sitemap.xml
