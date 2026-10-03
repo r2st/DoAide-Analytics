@@ -4,6 +4,9 @@ const TOOLS = [
   { path: '/calculator', label: 'ROI Calculator' },
   { path: '/checker', label: 'Speed Checker' },
   { path: '/templates', label: 'Templates' },
+  { path: '/tools/roi-calculator', label: 'Analytics ROI' },
+  { path: '/tools/sample-size-calculator', label: 'Sample Size' },
+  { path: '/tools/churn-predictor', label: 'Churn Risk' },
 ]
 
 export default function ToolsNav() {

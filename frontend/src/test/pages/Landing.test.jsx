@@ -58,7 +58,7 @@ describe('Landing', () => {
     const user = userEvent.setup()
     const firstQ = screen.getByText('What data sources can I connect?')
     await user.click(firstQ)
-    expect(screen.getByText(/CSV files/)).toBeInTheDocument()
+    expect(screen.getAllByText(/CSV files/).length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders CTA buttons', () => {

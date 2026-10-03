@@ -20,6 +20,12 @@ import BlogLayout, { BlogIndex } from './pages/BlogLayout'
 import MarketingRoiGuide from './pages/blog/MarketingRoiGuide'
 import WebPerformanceGuide from './pages/blog/WebPerformanceGuide'
 import DashboardDesignGuide from './pages/blog/DashboardDesignGuide'
+import AiAnalyticsTransforms from './pages/blog/AiAnalyticsTransforms'
+import SaasKpis from './pages/blog/SaasKpis'
+import PredictiveAnalyticsGuide from './pages/blog/PredictiveAnalyticsGuide'
+import RoiCalculator from './pages/tools/RoiCalculator'
+import SampleSizeCalculator from './pages/tools/SampleSizeCalculator'
+import ChurnPredictor from './pages/tools/ChurnPredictor'
 
 export default function App() {
   return (
@@ -32,8 +38,14 @@ export default function App() {
       <Route path="/checker" element={<CheckerPage />} />
       <Route path="/templates" element={<TemplatesPage />} />
       <Route path="/embed" element={<EmbedPage />} />
+      <Route path="/tools/roi-calculator" element={<RoiCalculator />} />
+      <Route path="/tools/sample-size-calculator" element={<SampleSizeCalculator />} />
+      <Route path="/tools/churn-predictor" element={<ChurnPredictor />} />
       <Route path="/blog" element={<BlogLayout />}>
         <Route index element={<BlogIndex />} />
+        <Route path="ai-analytics-transforms-data" element={<AiAnalyticsTransforms />} />
+        <Route path="saas-kpis-to-track" element={<SaasKpis />} />
+        <Route path="predictive-analytics-guide" element={<PredictiveAnalyticsGuide />} />
         <Route path="marketing-roi-guide" element={<MarketingRoiGuide />} />
         <Route path="website-performance-metrics" element={<WebPerformanceGuide />} />
         <Route path="dashboard-design-best-practices" element={<DashboardDesignGuide />} />

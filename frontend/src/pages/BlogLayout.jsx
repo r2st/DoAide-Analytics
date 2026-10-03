@@ -2,6 +2,21 @@ import { Link, Outlet } from 'react-router-dom'
 
 const ARTICLES = [
   {
+    slug: 'ai-analytics-transforms-data',
+    title: 'How AI Analytics Transforms Raw Data Into Business Decisions',
+    description: 'Learn how AI automates anomaly detection, natural language queries, and predictive forecasting to close the gap between data and decisions.',
+  },
+  {
+    slug: 'saas-kpis-to-track',
+    title: '5 KPIs Every SaaS Business Should Track Automatically',
+    description: 'MRR, churn rate, CAC, LTV:CAC ratio, and NRR — the five metrics that deserve real-time dashboards, not monthly spreadsheets.',
+  },
+  {
+    slug: 'predictive-analytics-guide',
+    title: 'The Complete Guide to Predictive Analytics for Small Business',
+    description: 'Revenue forecasting, churn prediction, and demand planning — how to use predictive analytics without a data science team.',
+  },
+  {
     slug: 'marketing-roi-guide',
     title: 'Marketing ROI Explained — How to Measure Campaign Performance',
     description: 'Learn how to calculate marketing ROI, ROAS, and CPA. Includes formulas, benchmarks, and tips for optimizing ad spend.',

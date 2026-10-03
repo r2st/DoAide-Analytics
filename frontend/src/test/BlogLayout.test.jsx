@@ -4,12 +4,15 @@ import { describe, expect, it } from 'vitest'
 import { BlogIndex } from '../pages/BlogLayout'
 
 describe('BlogIndex', () => {
-  it('renders all 3 article cards', () => {
+  it('renders all 6 article cards', () => {
     render(
       <MemoryRouter>
         <BlogIndex />
       </MemoryRouter>,
     )
+    expect(screen.getByText(/AI Analytics Transforms/)).toBeInTheDocument()
+    expect(screen.getByText(/5 KPIs/)).toBeInTheDocument()
+    expect(screen.getByText(/Predictive Analytics/)).toBeInTheDocument()
     expect(screen.getByText(/Marketing ROI Explained/)).toBeInTheDocument()
     expect(screen.getByText(/Core Web Vitals/)).toBeInTheDocument()
     expect(screen.getByText(/Dashboard Design Best Practices/)).toBeInTheDocument()
@@ -22,6 +25,6 @@ describe('BlogIndex', () => {
       </MemoryRouter>,
     )
     const links = screen.getAllByText(/Read more/)
-    expect(links).toHaveLength(3)
+    expect(links).toHaveLength(6)
   })
 })
