@@ -14,7 +14,9 @@ export default function Pricing() {
       <nav className="flex items-center justify-between px-6 py-4 max-w-6xl mx-auto">
         <Link to="/" className="flex items-center gap-2">
           <BarChart3 className="text-primary" size={28} />
-          <span className="text-xl font-bold text-gray-900 dark:text-white">DoAide Analytics</span>
+          <span className="text-xl font-bold text-primary">DoAide</span>
+          <span className="text-gray-300 dark:text-gray-600">|</span>
+          <span className="text-xl text-gray-500 dark:text-gray-400">Analytics</span>
         </Link>
         <div className="flex items-center gap-4">
           <Link to="/login"><Button variant="ghost" size="sm">Sign In</Button></Link>

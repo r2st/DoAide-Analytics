@@ -20,7 +20,9 @@ export default function Login() {
       <div className="w-full max-w-md">
         <div className="flex items-center justify-center gap-2 mb-8">
           <BarChart3 className="text-primary" size={32} />
-          <span className="text-2xl font-bold text-gray-900 dark:text-white">DoAide</span>
+          <span className="text-2xl font-bold text-primary">DoAide</span>
+          <span className="text-gray-300 dark:text-gray-600 text-2xl">|</span>
+          <span className="text-2xl text-gray-500 dark:text-gray-400">Analytics</span>
         </div>
 
         <div className="rounded-xl border border-border dark:border-gray-800 bg-white dark:bg-surface-dark-secondary p-8">

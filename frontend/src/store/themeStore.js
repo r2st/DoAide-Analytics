@@ -2,9 +2,9 @@ import { create } from 'zustand'
 
 const getInitialTheme = () => {
   try {
-    return localStorage.getItem('theme') || 'system'
+    return localStorage.getItem('theme') || 'light'
   } catch {
-    return 'system'
+    return 'light'
   }
 }
 
@@ -14,6 +14,7 @@ const applyTheme = (theme) => {
     theme === 'dark' ||
     (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
 
+  root.setAttribute('data-theme', isDark ? 'dark' : 'light')
   root.classList.toggle('dark', isDark)
 }
 

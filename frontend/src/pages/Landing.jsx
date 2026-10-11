@@ -26,40 +26,6 @@ const TYPEWRITER_PHRASES = [
   "Scheduled reports on autopilot",
 ]
 
-function RobotFace({ size = 32, color }) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width={size} height={size} aria-hidden="true">
-      <line x1="16" y1="6" x2="16" y2="2" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
-      <circle cx="16" cy="1.5" r="1.5" fill={color} />
-      <rect x="5" y="6" width="22" height="17" rx="5" fill={color} />
-      <ellipse cx="11" cy="13" rx="2.5" ry="3" fill="#0A0A0B" />
-      <ellipse cx="21" cy="13" rx="2.5" ry="3" fill="#0A0A0B" />
-      <circle cx="11.5" cy="12.5" r="1" fill={color} opacity="0.6" />
-      <circle cx="21.5" cy="12.5" r="1" fill={color} opacity="0.6" />
-      <path d="M12 19Q16 22 20 19" stroke="#0A0A0B" strokeWidth="1.2" fill="none" strokeLinecap="round" />
-      <rect x="1" y="10" width="4" height="5" rx="2" fill={color} opacity="0.8" />
-      <rect x="27" y="10" width="4" height="5" rx="2" fill={color} opacity="0.8" />
-    </svg>
-  )
-}
-
-function HeroRobot({ color }) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" width="120" height="100" className="landing-hero-robot" aria-hidden="true">
-      <line x1="60" y1="18" x2="60" y2="6" stroke={color} strokeWidth="2.5" strokeLinecap="round" />
-      <circle cx="60" cy="4" r="3" fill={color} className="landing-antenna-glow" />
-      <rect x="25" y="18" width="70" height="55" rx="16" fill={color} />
-      <ellipse cx="42" cy="40" rx="8" ry="10" fill="#0A0A0B" />
-      <ellipse cx="78" cy="40" rx="8" ry="10" fill="#0A0A0B" />
-      <circle cx="44" cy="38" r="3" fill={color} opacity="0.5" />
-      <circle cx="80" cy="38" r="3" fill={color} opacity="0.5" />
-      <path d="M45 60 Q60 72 75 60" stroke="#0A0A0B" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-      <rect x="5" y="30" width="16" height="18" rx="6" fill={color} opacity="0.8" />
-      <rect x="99" y="30" width="16" height="18" rx="6" fill={color} opacity="0.8" />
-    </svg>
-  )
-}
-
 function Typewriter({ phrases }) {
   const [index, setIndex] = useState(0)
   const [text, setText] = useState("")
@@ -94,52 +60,52 @@ function PipelineGraphic() {
   return (
     <div className="landing-pipeline" aria-hidden="true">
       <svg viewBox="0 0 520 90" xmlns="http://www.w3.org/2000/svg">
-        <line x1="78" y1="36" x2="152" y2="36" stroke="rgba(240,180,41,0.2)" strokeWidth="2" />
-        <line x1="218" y1="36" x2="302" y2="36" stroke="rgba(240,180,41,0.2)" strokeWidth="2" />
-        <line x1="368" y1="36" x2="442" y2="36" stroke="rgba(240,180,41,0.2)" strokeWidth="2" />
+        <line x1="78" y1="36" x2="152" y2="36" stroke="rgba(13,148,136,0.2)" strokeWidth="2" />
+        <line x1="218" y1="36" x2="302" y2="36" stroke="rgba(13,148,136,0.2)" strokeWidth="2" />
+        <line x1="368" y1="36" x2="442" y2="36" stroke="rgba(13,148,136,0.2)" strokeWidth="2" />
 
-        <circle r="3" fill="#F0B429" opacity="0.8">
+        <circle r="3" fill="#0D9488" opacity="0.8">
           <animateMotion dur="2s" repeatCount="indefinite" path="M78,36 L152,36" />
         </circle>
-        <circle r="2" fill="#F7CC5F" opacity="0.5">
+        <circle r="2" fill="#2DD4BF" opacity="0.5">
           <animateMotion dur="2s" repeatCount="indefinite" begin="0.5s" path="M78,36 L152,36" />
         </circle>
-        <circle r="3" fill="#F0B429" opacity="0.8">
+        <circle r="3" fill="#0D9488" opacity="0.8">
           <animateMotion dur="2s" repeatCount="indefinite" begin="0.7s" path="M218,36 L302,36" />
         </circle>
-        <circle r="2" fill="#F7CC5F" opacity="0.5">
+        <circle r="2" fill="#2DD4BF" opacity="0.5">
           <animateMotion dur="2s" repeatCount="indefinite" begin="1.2s" path="M218,36 L302,36" />
         </circle>
-        <circle r="3" fill="#F0B429" opacity="0.8">
+        <circle r="3" fill="#0D9488" opacity="0.8">
           <animateMotion dur="2s" repeatCount="indefinite" begin="1.4s" path="M368,36 L442,36" />
         </circle>
-        <circle r="2" fill="#F7CC5F" opacity="0.5">
+        <circle r="2" fill="#2DD4BF" opacity="0.5">
           <animateMotion dur="2s" repeatCount="indefinite" begin="1.9s" path="M368,36 L442,36" />
         </circle>
 
         {/* Connect */}
-        <circle cx="50" cy="36" r="28" fill="rgba(240,180,41,0.06)" stroke="rgba(240,180,41,0.25)" strokeWidth="1.5" />
-        <path d="M42 30v12h4l-6 6-6-6h4V30h4z" fill="none" stroke="#F0B429" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
-        <text x="50" y="78" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10" fontFamily="'IBM Plex Mono',monospace">Connect</text>
+        <circle cx="50" cy="36" r="28" fill="rgba(13,148,136,0.06)" stroke="rgba(13,148,136,0.25)" strokeWidth="1.5" />
+        <path d="M42 30v12h4l-6 6-6-6h4V30h4z" fill="none" stroke="#0D9488" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+        <text x="50" y="78" textAnchor="middle" fill="rgba(0,0,0,0.35)" fontSize="10" fontFamily="'IBM Plex Mono',monospace">Connect</text>
 
         {/* Analyze */}
-        <circle cx="190" cy="36" r="28" fill="rgba(240,180,41,0.06)" stroke="rgba(240,180,41,0.25)" strokeWidth="1.5" />
-        <path d="M183 44l3-8 3 4 3-10 3 6" fill="none" stroke="#F0B429" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
-        <text x="190" y="78" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10" fontFamily="'IBM Plex Mono',monospace">Analyze</text>
+        <circle cx="190" cy="36" r="28" fill="rgba(13,148,136,0.06)" stroke="rgba(13,148,136,0.25)" strokeWidth="1.5" />
+        <path d="M183 44l3-8 3 4 3-10 3 6" fill="none" stroke="#0D9488" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+        <text x="190" y="78" textAnchor="middle" fill="rgba(0,0,0,0.35)" fontSize="10" fontFamily="'IBM Plex Mono',monospace">Analyze</text>
 
         {/* Visualize */}
-        <circle cx="330" cy="36" r="28" fill="rgba(240,180,41,0.06)" stroke="rgba(240,180,41,0.25)" strokeWidth="1.5" />
-        <rect x="320" y="28" width="4" height="14" rx="1" fill="#F0B429" opacity="0.6" />
-        <rect x="326" y="32" width="4" height="10" rx="1" fill="#F0B429" opacity="0.8" />
-        <rect x="332" y="25" width="4" height="17" rx="1" fill="#F0B429" />
-        <rect x="338" y="30" width="4" height="12" rx="1" fill="#F0B429" opacity="0.7" />
-        <text x="330" y="78" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10" fontFamily="'IBM Plex Mono',monospace">Visualize</text>
+        <circle cx="330" cy="36" r="28" fill="rgba(13,148,136,0.06)" stroke="rgba(13,148,136,0.25)" strokeWidth="1.5" />
+        <rect x="320" y="28" width="4" height="14" rx="1" fill="#0D9488" opacity="0.6" />
+        <rect x="326" y="32" width="4" height="10" rx="1" fill="#0D9488" opacity="0.8" />
+        <rect x="332" y="25" width="4" height="17" rx="1" fill="#0D9488" />
+        <rect x="338" y="30" width="4" height="12" rx="1" fill="#0D9488" opacity="0.7" />
+        <text x="330" y="78" textAnchor="middle" fill="rgba(0,0,0,0.35)" fontSize="10" fontFamily="'IBM Plex Mono',monospace">Visualize</text>
 
         {/* Report */}
-        <circle cx="470" cy="36" r="28" fill="rgba(240,180,41,0.06)" stroke="rgba(240,180,41,0.25)" strokeWidth="1.5" />
-        <path d="M462 28h16v16h-16z" fill="none" stroke="#F0B429" strokeWidth="1.3" strokeLinejoin="round" />
-        <path d="M465 33h10M465 36h7M465 39h9" stroke="#F0B429" strokeWidth="1" strokeLinecap="round" />
-        <text x="470" y="78" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10" fontFamily="'IBM Plex Mono',monospace">Report</text>
+        <circle cx="470" cy="36" r="28" fill="rgba(13,148,136,0.06)" stroke="rgba(13,148,136,0.25)" strokeWidth="1.5" />
+        <path d="M462 28h16v16h-16z" fill="none" stroke="#0D9488" strokeWidth="1.3" strokeLinejoin="round" />
+        <path d="M465 33h10M465 36h7M465 39h9" stroke="#0D9488" strokeWidth="1" strokeLinecap="round" />
+        <text x="470" y="78" textAnchor="middle" fill="rgba(0,0,0,0.35)" fontSize="10" fontFamily="'IBM Plex Mono',monospace">Report</text>
       </svg>
     </div>
   )
@@ -182,7 +148,7 @@ const FEATURES = [
     title: "Dashboard Builder",
     desc: "Drag-and-drop widgets to build custom dashboards with charts, KPIs, and tables.",
     icon: (
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#F0B429" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0D9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="3" y="3" width="7" height="7" />
         <rect x="14" y="3" width="7" height="7" />
         <rect x="14" y="14" width="7" height="7" />
@@ -194,7 +160,7 @@ const FEATURES = [
     title: "Data Connectors",
     desc: "Import data from CSV files, Google Sheets, or enter manually.",
     icon: (
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#F0B429" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0D9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <ellipse cx="12" cy="5" rx="9" ry="3" />
         <path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3" />
         <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
@@ -205,7 +171,7 @@ const FEATURES = [
     title: "AI Insights",
     desc: "Get trend detection, anomaly alerts, and natural language queries powered by AI.",
     icon: (
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#F0B429" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0D9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M12 2L2 7l10 5 10-5-10-5z" />
         <path d="M2 17l10 5 10-5" />
         <path d="M2 12l10 5 10-5" />
@@ -216,7 +182,7 @@ const FEATURES = [
     title: "Rich Visualizations",
     desc: "Line, bar, pie, funnel charts plus data tables and KPI cards.",
     icon: (
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#F0B429" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0D9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <line x1="18" y1="20" x2="18" y2="10" />
         <line x1="12" y1="20" x2="12" y2="4" />
         <line x1="6" y1="20" x2="6" y2="14" />
@@ -227,7 +193,7 @@ const FEATURES = [
     title: "Report Generation",
     desc: "Export dashboards as PDF or Excel reports with one click.",
     icon: (
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#F0B429" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0D9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
         <polyline points="14 2 14 8 20 8" />
         <line x1="8" y1="13" x2="16" y2="13" />
@@ -239,7 +205,7 @@ const FEATURES = [
     title: "Scheduled Reports",
     desc: "Automate report delivery to your team on a recurring schedule.",
     icon: (
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#F0B429" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0D9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="3" y="4" width="18" height="18" rx="2" />
         <line x1="16" y1="2" x2="16" y2="6" />
         <line x1="8" y1="2" x2="8" y2="6" />
@@ -317,9 +283,8 @@ export default function Landing() {
 
       <header className={`landing-header ${vis}`}>
         <a href="https://doaide.com" className="landing-brand">
-          <RobotFace size={28} color="#F0B429" />
           <span className="landing-brand-text">
-            DoAide <em>Analytics</em>
+            DoAide <span className="landing-brand-sep">|</span> <em>Analytics</em>
           </span>
         </a>
         <div style={{ flex: 1 }} />
@@ -332,9 +297,6 @@ export default function Landing() {
 
       <main>
         <section className={`landing-hero ${vis}`}>
-          <div className="landing-hero-robot-wrap">
-            <HeroRobot color="#F0B429" />
-          </div>
           <h1 className="landing-headline">AI-Powered Analytics for Growing Businesses</h1>
           <p className="landing-subtitle">
             Build beautiful dashboards, uncover trends with AI, and share insights
@@ -355,7 +317,7 @@ export default function Landing() {
           <div className="landing-features-grid">
             <Link to="/calculator" className="landing-feature-card" style={{ textDecoration: "none" }}>
               <div className="landing-feature-icon">
-                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#F0B429" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0D9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <rect x="4" y="2" width="16" height="20" rx="2" />
                   <line x1="8" y1="6" x2="16" y2="6" />
                   <line x1="8" y1="10" x2="10" y2="10" /><line x1="14" y1="10" x2="16" y2="10" />
@@ -368,7 +330,7 @@ export default function Landing() {
             </Link>
             <Link to="/templates" className="landing-feature-card" style={{ textDecoration: "none" }}>
               <div className="landing-feature-icon">
-                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#F0B429" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0D9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="2" />
                   <line x1="3" y1="9" x2="21" y2="9" />
                   <line x1="9" y1="21" x2="9" y2="9" />
@@ -379,7 +341,7 @@ export default function Landing() {
             </Link>
             <Link to="/embed" className="landing-feature-card" style={{ textDecoration: "none" }}>
               <div className="landing-feature-icon">
-                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#F0B429" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#0D9488" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <polyline points="16 18 22 12 16 6" />
                   <polyline points="8 6 2 12 8 18" />
                 </svg>
@@ -499,9 +461,9 @@ export default function Landing() {
         </div>
         <div className="landing-footer-bottom">
           <a href="https://doaide.com" className="landing-footer-home">
-            <RobotFace size={16} color="#F0B429" />
             doaide.com
           </a>
+          <span className="landing-badge">A DoAide Product</span>
           <span className="landing-footer-copy">&copy; {new Date().getFullYear()} DoAide. All rights reserved.</span>
         </div>
       </footer>

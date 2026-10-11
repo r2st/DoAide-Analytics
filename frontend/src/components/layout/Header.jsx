@@ -9,8 +9,10 @@ export default function Header() {
 
   return (
     <header className="flex items-center justify-between px-6 py-3 border-b border-border dark:border-gray-800 bg-white dark:bg-surface-dark">
-      <div className="text-sm text-gray-500 dark:text-gray-400">
-        Analytics Dashboard
+      <div className="flex items-center gap-2 text-sm">
+        <span className="font-bold text-primary">DoAide</span>
+        <span className="text-gray-300 dark:text-gray-600">|</span>
+        <span className="text-gray-500 dark:text-gray-400">Analytics</span>
       </div>
 
       <div className="flex items-center gap-4">

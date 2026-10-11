@@ -36,7 +36,7 @@ export default function Sidebar() {
         {!collapsed && (
           <div className="flex items-center gap-2">
             <BarChart3 className="text-primary" size={24} />
-            <span className="font-bold text-gray-900 dark:text-white">DoAide</span>
+            <span className="font-bold text-primary">DoAide</span>
           </div>
         )}
         <button

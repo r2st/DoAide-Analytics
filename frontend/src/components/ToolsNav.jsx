@@ -13,7 +13,7 @@ export default function ToolsNav() {
   const { pathname } = useLocation()
   return (
     <nav className="flex items-center gap-4 px-4 py-3 border-b border-border dark:border-gray-800 flex-wrap">
-      <Link to="/" className="font-bold text-primary no-underline text-sm whitespace-nowrap">DoAide Analytics</Link>
+      <Link to="/" className="font-bold text-primary no-underline text-sm whitespace-nowrap">DoAide <span className="text-gray-400 font-light">|</span> <span className="font-normal text-gray-500">Analytics</span></Link>
       <div className="flex gap-2 flex-wrap">
         {TOOLS.map((t) => (
           <Link key={t.path} to={t.path} className={`text-sm px-3 py-1.5 rounded-md no-underline transition-colors ${pathname === t.path ? 'bg-primary/10 text-primary' : 'text-gray-500 hover:text-gray-900 dark:hover:text-white'}`}>
